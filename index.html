@@ -4,24 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Cartamodello">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#201F1C">
+<meta name="theme-color" content="#F1E7D4">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
 <title>Cartamodello — disegno tecnico maglia</title>
 <style>
   :root{
-    --ink: #EDE6D6;
-    --ink-dim: #B9AF9B;
-    --panel: #2C2B27;
-    --panel-2: #34322D;
-    --chrome: #201F1C;
-    --line: #45423B;
-    --accent: #4E7A96;
-    --accent-2: #C99A3C;
+    --ink: #4A4030;
+    --ink-dim: #8F8168;
+    --panel: #EFE4CE;
+    --panel-2: #E6D8B9;
+    --chrome: #F1E7D4;
+    --line: #D9C9A3;
+    --accent: #7C8B6E;
+    --accent-2: #B4823C;
     --danger: #B5533F;
-    --ok: #4F9D6E;
-    --paper: #FBF8F1;
+    --ok: #6B8F63;
+    --paper: #FDFAF3;
     font-size: 15px;
   }
   *{box-sizing:border-box;}
@@ -182,13 +185,13 @@
   .shape-item.selected{ background:var(--accent); color:#fff; }
 
   .canvas-wrap{
-    flex:1 1 auto; overflow:auto; background: #1b1a17;
+    flex:1 1 auto; overflow:auto; background: #E3D6B4;
     display:flex; align-items:flex-start; justify-content:flex-start;
     padding: 24px;
   }
   canvas.sheet{
     background:var(--paper); display:block; touch-action:none; cursor:crosshair;
-    box-shadow: 0 6px 24px rgba(0,0,0,.45);
+    box-shadow: 0 6px 20px rgba(110,90,55,.28);
   }
 
   footer{
